@@ -22,96 +22,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-pm-SIJ" customClass="FasciaView" customModule="Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="667" height="187.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-fh-VQO">
-                                                <rect key="frame" x="20" y="20" width="596" height="32"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w1L-h4-d07">
-                                                        <rect key="frame" x="0.0" y="0.0" width="596" height="32"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uU8-2C-PUX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="32"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show notes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2X-cx-pG8">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="79" height="32"/>
-                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tjn-wG-lev">
-                                                                        <rect key="frame" x="99" y="0.0" width="51" height="32"/>
-                                                                        <connections>
-                                                                            <action selector="showNotesTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="xOo-c2-0K6"/>
-                                                                        </connections>
-                                                                    </switch>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" maximumValue="96" stepValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-Hl-KuX">
-                                                                <rect key="frame" x="168" y="0.0" width="94" height="32"/>
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <connections>
-                                                                    <action selector="octaveStepperTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="zAB-i0-jIN"/>
-                                                                </connections>
-                                                            </stepper>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Key count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy4-hl-UmT">
-                                                                <rect key="frame" x="282" y="0.0" width="71.5" height="32"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRF-uv-LtE">
-                                                                <rect key="frame" x="373.5" y="0.0" width="8.5" height="32"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minimumValue="12" maximumValue="61" translatesAutoresizingMaskIntoConstraints="NO" id="rho-Cu-33h">
-                                                                <rect key="frame" x="402" y="0.0" width="94" height="32"/>
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <connections>
-                                                                    <action selector="keyNumberStepperTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nfx-wZ-qY6"/>
-                                                                </connections>
-                                                            </stepper>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Octave:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePq-gW-icB">
-                                                                <rect key="frame" x="516" y="0.0" width="51.5" height="32"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqQ-ei-u50">
-                                                                <rect key="frame" x="587.5" y="0.0" width="8.5" height="32"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1NO-g5-ki3">
-                                                <rect key="frame" x="540" y="20" width="107" height="31"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S02-fb-71i">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="31"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latch" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3D-Be-77K" userLabel="Latch">
-                                                                <rect key="frame" x="0.0" y="0.0" width="38" height="31"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sHT-dQ-dzj">
-                                                                <rect key="frame" x="58" y="0.0" width="51" height="31"/>
-                                                                <color key="onTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <connections>
-                                                                    <action selector="latchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="qxu-Fi-P8o"/>
-                                                                </connections>
-                                                            </switch>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2Z-tS-eBp" userLabel="メトロノームstack View">
-                                                <rect key="frame" x="0.0" y="147" width="667" height="32"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2Z-tS-eBp" userLabel="メトロノームstack View">
+                                                <rect key="frame" x="5" y="150.5" width="657" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyX-HT-TBM">
                                                         <rect key="frame" x="0.0" y="0.0" width="102.5" height="32"/>
@@ -193,7 +105,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omZ-xD-P1w">
-                                                        <rect key="frame" x="595" y="0.0" width="72" height="32"/>
+                                                        <rect key="frame" x="595" y="0.0" width="62" height="32"/>
                                                         <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -201,15 +113,119 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jrr-qb-kjs">
+                                                <rect key="frame" x="487" y="1" width="139" height="141"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XcG-KP-nDI">
+                                                <rect key="frame" x="28" y="8" width="407" height="152"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQz-QS-fY3">
+                                                <rect key="frame" x="45" y="107.5" width="353" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RP-v1-k8D" customClass="①">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" image="1.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdd-Vu-ksw" customClass="①">
+                                                        <rect key="frame" x="37" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="2.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHg-K7-6xE" customClass="①">
+                                                        <rect key="frame" x="74" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="3.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIy-rl-sqO" customClass="①">
+                                                        <rect key="frame" x="111" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="4.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjJ-k9-daZ" customClass="①">
+                                                        <rect key="frame" x="148" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="05.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpK-PQ-YoT" customClass="①">
+                                                        <rect key="frame" x="185" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="6.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmt-lr-4wz" customClass="①">
+                                                        <rect key="frame" x="222" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="7.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCX-vR-CoF" customClass="①">
+                                                        <rect key="frame" x="259" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="8.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cq5-kl-8ib" customClass="①">
+                                                        <rect key="frame" x="296" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="9.circle" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZN0-qW-Kbh" customClass="①">
+                                                        <rect key="frame" x="333" y="0.0" width="20" height="36"/>
+                                                        <state key="normal" image="10.circle" catalog="system"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCg-7K-KQQ">
+                                                <rect key="frame" x="45" y="46" width="353" height="22"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6X-9e-GXe" customClass="①">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="1.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2j-qs-KWE">
+                                                        <rect key="frame" x="37" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="2.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3B-rS-csp">
+                                                        <rect key="frame" x="74" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="3.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-3y-eQT">
+                                                        <rect key="frame" x="111" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="4.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTh-dM-PVX">
+                                                        <rect key="frame" x="148" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="5.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQC-It-iRh">
+                                                        <rect key="frame" x="185" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="6.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jw-FA-Keg">
+                                                        <rect key="frame" x="222" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="7.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDv-Sr-wss">
+                                                        <rect key="frame" x="259" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="8.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plX-42-OrU">
+                                                        <rect key="frame" x="296" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="9.circle.fill" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gal-g1-bVV">
+                                                        <rect key="frame" x="333" y="0.0" width="20" height="22"/>
+                                                        <state key="normal" image="10.circle.fill" catalog="system"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="K2Z-tS-eBp" firstAttribute="leading" secondItem="1S7-pm-SIJ" secondAttribute="leading" id="FL1-Nf-Xl7"/>
-                                            <constraint firstAttribute="trailing" secondItem="1NO-g5-ki3" secondAttribute="trailing" constant="20" id="Tu0-U0-fRG"/>
-                                            <constraint firstAttribute="trailing" secondItem="K2Z-tS-eBp" secondAttribute="trailing" id="YrH-D7-Cud"/>
-                                            <constraint firstItem="1NO-g5-ki3" firstAttribute="top" secondItem="1S7-pm-SIJ" secondAttribute="top" constant="20" id="bFB-FD-sFt"/>
-                                            <constraint firstItem="O0f-fh-VQO" firstAttribute="leading" secondItem="1S7-pm-SIJ" secondAttribute="leading" constant="20" id="cR0-kj-pKp"/>
-                                            <constraint firstItem="O0f-fh-VQO" firstAttribute="top" secondItem="1S7-pm-SIJ" secondAttribute="top" constant="20" id="d9V-NL-D5C"/>
+                                            <constraint firstItem="K2Z-tS-eBp" firstAttribute="top" secondItem="Jrr-qb-kjs" secondAttribute="bottom" constant="8.5" id="05r-oV-E3O"/>
+                                            <constraint firstItem="XcG-KP-nDI" firstAttribute="leading" secondItem="1S7-pm-SIJ" secondAttribute="leading" constant="28" id="3Dl-0m-8fj"/>
+                                            <constraint firstItem="OCg-7K-KQQ" firstAttribute="top" secondItem="XcG-KP-nDI" secondAttribute="top" constant="23" id="Hce-4A-eYu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jrr-qb-kjs" secondAttribute="trailing" constant="41" id="QJW-To-bLb"/>
+                                            <constraint firstItem="K2Z-tS-eBp" firstAttribute="leading" secondItem="1S7-pm-SIJ" secondAttribute="leading" constant="5" id="akG-aF-6Lg"/>
+                                            <constraint firstItem="Jrr-qb-kjs" firstAttribute="leading" secondItem="XcG-KP-nDI" secondAttribute="trailing" constant="56" id="dD5-Ij-OKy"/>
+                                            <constraint firstItem="OCg-7K-KQQ" firstAttribute="leading" secondItem="1S7-pm-SIJ" secondAttribute="leading" constant="45" id="eTg-E1-Zj9"/>
+                                            <constraint firstAttribute="trailing" secondItem="K2Z-tS-eBp" secondAttribute="trailing" constant="5" id="f4T-YS-Zs5"/>
+                                            <constraint firstItem="Jrr-qb-kjs" firstAttribute="top" secondItem="1S7-pm-SIJ" secondAttribute="top" constant="1" id="fTD-sO-NCW"/>
+                                            <constraint firstItem="XcG-KP-nDI" firstAttribute="top" secondItem="1S7-pm-SIJ" secondAttribute="top" constant="23" id="gJp-AX-BY3"/>
+                                            <constraint firstItem="BQz-QS-fY3" firstAttribute="leading" secondItem="1S7-pm-SIJ" secondAttribute="leading" constant="45" id="nO4-68-iiS"/>
+                                            <constraint firstItem="BQz-QS-fY3" firstAttribute="top" secondItem="XcG-KP-nDI" secondAttribute="bottom" constant="-50" id="o5L-3w-kpU"/>
+                                            <constraint firstAttribute="bottom" secondItem="K2Z-tS-eBp" secondAttribute="bottom" constant="5" id="rC2-TY-8RG"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufA-QA-Ylh" userLabel="Keyboard" customClass="PianoKeyboard" customModule="Example" customModuleProvider="target">
@@ -242,13 +258,7 @@
                     </view>
                     <connections>
                         <outlet property="fascia" destination="1S7-pm-SIJ" id="KtK-kr-NZo"/>
-                        <outlet property="keyNumberLabel" destination="cRF-uv-LtE" id="ilU-ee-MCT"/>
-                        <outlet property="keyNumberStepper" destination="rho-Cu-33h" id="MIU-cC-Wak"/>
                         <outlet property="keyboard" destination="ufA-QA-Ylh" id="rLo-r7-SCB"/>
-                        <outlet property="latchSwitch" destination="sHT-dQ-dzj" id="fOJ-KV-XbL"/>
-                        <outlet property="octaveLabel" destination="mqQ-ei-u50" id="ZJ7-Ad-Je4"/>
-                        <outlet property="octaveStepper" destination="zwD-Hl-KuX" id="yfj-pr-xPl"/>
-                        <outlet property="showNotesSwitch" destination="Tjn-wG-lev" id="u4Q-78-gCF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -256,4 +266,28 @@
             <point key="canvasLocation" x="516.79160419790105" y="498.39999999999998"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="05.circle" catalog="system" width="64" height="60"/>
+        <image name="1.circle" catalog="system" width="64" height="60"/>
+        <image name="1.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="10.circle" catalog="system" width="64" height="60"/>
+        <image name="10.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="2.circle" catalog="system" width="64" height="60"/>
+        <image name="2.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="3.circle" catalog="system" width="64" height="60"/>
+        <image name="3.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="4.circle" catalog="system" width="64" height="60"/>
+        <image name="4.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="5.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="6.circle" catalog="system" width="64" height="60"/>
+        <image name="6.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="7.circle" catalog="system" width="64" height="60"/>
+        <image name="7.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="8.circle" catalog="system" width="64" height="60"/>
+        <image name="8.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="9.circle" catalog="system" width="64" height="60"/>
+        <image name="9.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="Image" width="636" height="134.5"/>
+        <image name="Image-1" width="414" height="419"/>
+    </resources>
 </document>

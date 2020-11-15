@@ -31,8 +31,8 @@ class AudioEngine {
 
         // Delay
         delay.wetDryMix = 0.0
-        delay.delayTime = 0.50
-        delay.feedback = 0.0
+        delay.delayTime = 0.80
+        delay.feedback = 1.0
         delay.lowPassCutoff = 16000.0
 
         if engine.isRunning {
