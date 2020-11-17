@@ -7,14 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E356D142376F0A300928D66 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E356D132376F0A300928D66 /* Note.swift */; };
 		4E55CBE224222CA50026CBF7 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55CBE124222CA50026CBF7 /* Sequence.swift */; };
 		4E9778DB2399C0F7005454A9 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9778DA2399C0F7005454A9 /* ExampleTests.swift */; };
-		4EBA474622B05F0E0000113B /* NoteNameLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA474522B05F0E0000113B /* NoteNameLayer.swift */; };
-		4EBA474822B05F2E0000113B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA474722B05F2E0000113B /* Extensions.swift */; };
 		4EC552F91E5A0AA200526EF5 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC552F81E5A0AA200526EF5 /* AudioEngine.swift */; };
-		4ED397C31F8D798900FB1473 /* PianoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED397BF1F8D797C00FB1473 /* PianoKey.swift */; };
-		4ED397C41F8D798900FB1473 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED397C01F8D797C00FB1473 /* PianoKeyboard.swift */; };
 		4EEE35491CEBA0B500EAD308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE35481CEBA0B500EAD308 /* AppDelegate.swift */; };
 		4EEE354B1CEBA0B500EAD308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE354A1CEBA0B500EAD308 /* ViewController.swift */; };
 		4EEE354E1CEBA0B500EAD308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEE354C1CEBA0B500EAD308 /* Main.storyboard */; };
@@ -23,6 +18,13 @@
 		4EF5317E24E694B200A9A672 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5317D24E694B200A9A672 /* Demo.swift */; };
 		4EF5318624E69B7000A9A672 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5318524E69B7000A9A672 /* ExampleUITests.swift */; };
 		4EF5319624E7280D00A9A672 /* UITestsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5319524E7280D00A9A672 /* UITestsHelpers.swift */; };
+		CE49163D2563E8080006D393 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4916382563E8070006D393 /* Extensions.swift */; };
+		CE49163E2563E8080006D393 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4916392563E8070006D393 /* PianoKeyboard.swift */; };
+		CE49163F2563E8080006D393 /* NoteNameLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49163A2563E8070006D393 /* NoteNameLayer.swift */; };
+		CE4916402563E8080006D393 /* PianoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49163B2563E8070006D393 /* PianoKey.swift */; };
+		CE4916412563E8080006D393 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49163C2563E8080006D393 /* Note.swift */; };
+		CE4916442563E8FB0006D393 /* PianoKeyboard.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE4916422563E8FB0006D393 /* PianoKeyboard.podspec */; };
+		CE4916452563E8FB0006D393 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4916432563E8FB0006D393 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,18 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E356D132376F0A300928D66 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Source/Note.swift; sourceTree = "<group>"; };
 		4E55CBE124222CA50026CBF7 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
-		4E55CBE4242233EC0026CBF7 /* PianoKeyboard.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = PianoKeyboard.podspec; path = ../../PianoKeyboard.podspec; sourceTree = "<group>"; };
 		4E9778D82399C0F7005454A9 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9778DA2399C0F7005454A9 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		4E9778DC2399C0F7005454A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EBA474522B05F0E0000113B /* NoteNameLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteNameLayer.swift; path = ../Source/NoteNameLayer.swift; sourceTree = "<group>"; };
-		4EBA474722B05F2E0000113B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../Source/Extensions.swift; sourceTree = "<group>"; };
 		4EC552F81E5A0AA200526EF5 /* AudioEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
-		4ED397BF1F8D797C00FB1473 /* PianoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PianoKey.swift; path = ../Source/PianoKey.swift; sourceTree = "<group>"; };
-		4ED397C01F8D797C00FB1473 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PianoKeyboard.swift; path = ../Source/PianoKeyboard.swift; sourceTree = "<group>"; };
-		4EDC7C84249247330076ED29 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../Package.swift; sourceTree = "<group>"; };
 		4EEE35451CEBA0B500EAD308 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEE35481CEBA0B500EAD308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EEE354A1CEBA0B500EAD308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +62,13 @@
 		4EF5318524E69B7000A9A672 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		4EF5318724E69B7000A9A672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EF5319524E7280D00A9A672 /* UITestsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsHelpers.swift; sourceTree = "<group>"; };
+		CE4916382563E8070006D393 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE4916392563E8070006D393 /* PianoKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
+		CE49163A2563E8070006D393 /* NoteNameLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteNameLayer.swift; sourceTree = "<group>"; };
+		CE49163B2563E8070006D393 /* PianoKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoKey.swift; sourceTree = "<group>"; };
+		CE49163C2563E8080006D393 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CE4916422563E8FB0006D393 /* PianoKeyboard.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PianoKeyboard.podspec; sourceTree = "<group>"; };
+		CE4916432563E8FB0006D393 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,23 +105,11 @@
 			path = ExampleTests;
 			sourceTree = "<group>";
 		};
-		4ED397BE1F8D796300FB1473 /* PianoView */ = {
-			isa = PBXGroup;
-			children = (
-				4ED397C01F8D797C00FB1473 /* PianoKeyboard.swift */,
-				4ED397BF1F8D797C00FB1473 /* PianoKey.swift */,
-				4EBA474522B05F0E0000113B /* NoteNameLayer.swift */,
-				4EBA474722B05F2E0000113B /* Extensions.swift */,
-				4E356D132376F0A300928D66 /* Note.swift */,
-			);
-			name = PianoView;
-			sourceTree = "<group>";
-		};
 		4EEE353C1CEBA0B500EAD308 = {
 			isa = PBXGroup;
 			children = (
+				CE4916372563E7780006D393 /* PianoView */,
 				4EEE35471CEBA0B500EAD308 /* Example */,
-				4ED397BE1F8D796300FB1473 /* PianoView */,
 				4EEE355A1CEBA0BE00EAD308 /* Supporting Files */,
 				4E9778D92399C0F7005454A9 /* ExampleTests */,
 				4EF5318424E69B7000A9A672 /* ExampleUITests */,
@@ -153,8 +143,8 @@
 		4EEE355A1CEBA0BE00EAD308 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4E55CBE4242233EC0026CBF7 /* PianoKeyboard.podspec */,
-				4EDC7C84249247330076ED29 /* Package.swift */,
+				CE4916432563E8FB0006D393 /* Package.swift */,
+				CE4916422563E8FB0006D393 /* PianoKeyboard.podspec */,
 				4EEE35541CEBA0B500EAD308 /* Info.plist */,
 				4EEE354C1CEBA0B500EAD308 /* Main.storyboard */,
 				4EEE354F1CEBA0B500EAD308 /* Assets.xcassets */,
@@ -171,6 +161,18 @@
 				4EF5318724E69B7000A9A672 /* Info.plist */,
 			);
 			path = ExampleUITests;
+			sourceTree = "<group>";
+		};
+		CE4916372563E7780006D393 /* PianoView */ = {
+			isa = PBXGroup;
+			children = (
+				CE4916382563E8070006D393 /* Extensions.swift */,
+				CE49163C2563E8080006D393 /* Note.swift */,
+				CE49163A2563E8070006D393 /* NoteNameLayer.swift */,
+				CE49163B2563E8070006D393 /* PianoKey.swift */,
+				CE4916392563E8070006D393 /* PianoKeyboard.swift */,
+			);
+			path = PianoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EEE35501CEBA0B500EAD308 /* Assets.xcassets in Resources */,
+				CE4916442563E8FB0006D393 /* PianoKeyboard.podspec in Resources */,
 				4EEE354E1CEBA0B500EAD308 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,17 +320,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED397C41F8D798900FB1473 /* PianoKeyboard.swift in Sources */,
-				4ED397C31F8D798900FB1473 /* PianoKey.swift in Sources */,
+				CE4916452563E8FB0006D393 /* Package.swift in Sources */,
+				CE49163F2563E8080006D393 /* NoteNameLayer.swift in Sources */,
 				4E55CBE224222CA50026CBF7 /* Sequence.swift in Sources */,
-				4EBA474622B05F0E0000113B /* NoteNameLayer.swift in Sources */,
 				4EF5317E24E694B200A9A672 /* Demo.swift in Sources */,
 				4EC552F91E5A0AA200526EF5 /* AudioEngine.swift in Sources */,
 				4EEE354B1CEBA0B500EAD308 /* ViewController.swift in Sources */,
+				CE4916402563E8080006D393 /* PianoKey.swift in Sources */,
 				4EEE35491CEBA0B500EAD308 /* AppDelegate.swift in Sources */,
+				CE4916412563E8080006D393 /* Note.swift in Sources */,
 				4EF5317C24E68F1400A9A672 /* FasciaView.swift in Sources */,
-				4EBA474822B05F2E0000113B /* Extensions.swift in Sources */,
-				4E356D142376F0A300928D66 /* Note.swift in Sources */,
+				CE49163E2563E8080006D393 /* PianoKeyboard.swift in Sources */,
+				CE49163D2563E8080006D393 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
